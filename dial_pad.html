@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dial Pad</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="dialpad">
+        <div class="screen">
+            <div id="pageCount">0</div>
+        </div>
+        <div class="keys">
+            <div class="row">
+                <div class="key" onclick="addNumber(1)">1</div>
+                <div class="key" onclick="addNumber(4)">4</div>
+                <div class="key" onclick="addNumber(7)">7</div>
+            </div>
+            <div class="row">
+                <div class="key" onclick="addNumber(2)">2</div>
+                <div class="key" onclick="addNumber(5)">5</div>
+                <div class="key" onclick="addNumber(8)">8</div>
+            </div>
+            <div class="row">
+                <div class="key" onclick="addNumber(3)">3</div>
+                <div class="key" onclick="addNumber(6)">6</div>
+                <div class="key" onclick="addNumber(9)">9</div>
+            </div>
+            <div class="row">
+                <div class="key" onclick="addNumber(0)">0</div>
+                <div class="key" onclick="clearScreen()">C</div>
+            </div>
+        </div>
+        <div class="print-btn" onclick="printTickets()">Print</div>
+    </div>
+</div>
+<div id="ticketContent" style=" transform: rotate(-90deg) translateY(-100%); /* Rotate the content by -90 degrees and move it up */
+transform-origin: bottom left;" class="ticket-content">
+    <div class="ticket">
+        <div class="ticket-line">Name: Darsh Patel</div>
+        <div class="ticket-line">Date: 2024-08-12</div>
+        <div class="ticket-line">Time: 10:00 AM</div>
+        <div class="ticket-line">Price: $20</div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
