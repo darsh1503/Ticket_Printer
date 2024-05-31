@@ -16,10 +16,10 @@ function printTickets() {
     let content = '';
     for (let i = 0; i < pageCount; i++) {
         content += '<div class="ticket">' + 
-            '<div class="ticket-line">Name: Darsh Patel</div>' + 
-            '<div class="ticket-line">Date: 2024-08-12</div>' + 
-            '<div class="ticket-line">Time: 10:00 AM</div>' + 
-            '<div class="ticket-line">Price: $20</div>' + 
+            '<div class="ticket-line"></div>' + 
+            '<div class="ticket-line"></div>' + 
+            '<div class="ticket-line"></div>' + 
+            '<div class="ticket-line"></div>' + 
             '</div>' ; // Add a page break after each ticket
     }
 
