@@ -72,8 +72,8 @@ body {
 }
 
 .ticket {
-    width: 20mm;
-    height: 250mm;
+    width: 25mm;
+    height: 25cm;
     page-break-after: always;
     padding: 10px;
     border: 1px solid black;
