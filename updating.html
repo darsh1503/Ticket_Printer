@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dial Pad - Custom Ticket Printing</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="update.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1>Custom Ticket Printing</h1>
+    </div>
+    <div class="card p-4 shadow-sm">
+        <div class="display-4 mb-3" id="pageCount">0</div>
+        <div class="btn-group btn-group-lg d-flex flex-wrap">
+            <button class="btn btn-primary m-1" onclick="addNumber(1)">1</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(2)">2</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(3)">3</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(4)">4</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(5)">5</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(6)">6</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(7)">7</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(8)">8</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(9)">9</button>
+            <button class="btn btn-primary m-1" onclick="addNumber(0)">0</button>
+            <button class="btn btn-danger m-1" onclick="clearScreen()">C</button>
+        </div>
+        <button class="btn btn-success btn-lg mt-3" onclick="printTickets()">Print</button>
+    </div>
+</div>
+<div id="ticketContent" class="ticket-content d-none">
+    <div class="ticket">
+        <div class="ticket-line">Name: Darsh Patel</div>
+        <div class="ticket-line">Date: 2024-08-12</div>
+        <div class="ticket-line">Time: 10:00 AM</div>
+        <div class="ticket-line">Price: $20</div>
+    </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="update.js"></script>
+</body>
+</html>
